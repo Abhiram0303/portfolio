@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Menu, X, Download, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -82,9 +83,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white">
+    <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="text-xl font-bold text-coral-400">SUPRIYA.</div>
@@ -112,7 +113,7 @@ const Index = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-slate-800 border-t border-slate-700">
+          <div className="md:hidden bg-gray-900 border-t border-gray-800">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button onClick={() => scrollToSection('home')} className="block px-3 py-2 text-gray-300 hover:text-coral-400 w-full text-left">Home</button>
               <button onClick={() => scrollToSection('about')} className="block px-3 py-2 text-gray-300 hover:text-coral-400 w-full text-left">About</button>
@@ -171,7 +172,7 @@ const Index = () => {
               <div className="relative">
                 <div className="w-80 h-80 rounded-full border-4 border-coral-400 overflow-hidden">
                   <img 
-                    src="/lovable-uploads/54482c4a-33f3-431e-9c59-5841fb28706e.png" 
+                    src="/lovable-uploads/e2f5d714-0516-4791-9fe2-70a68d8f23dd.png" 
                     alt="Supriya Ramidi" 
                     className="w-full h-full object-cover"
                   />
@@ -185,7 +186,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-slate-800">
+      <section id="about" className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">About Me</h2>
@@ -221,7 +222,7 @@ const Index = () => {
               <h4 className="text-xl font-bold mb-6">Education</h4>
               <div className="space-y-6">
                 {education.map((edu, index) => (
-                  <Card key={index} className="bg-slate-700 border-slate-600">
+                  <Card key={index} className="bg-gray-800 border-gray-700">
                     <CardContent className="p-6">
                       <div className="flex justify-between items-start mb-2">
                         <h5 className="font-semibold text-coral-400">{edu.degree}</h5>
@@ -249,7 +250,7 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="bg-slate-800 border-slate-700 hover:border-coral-400 transition-all duration-300 hover:scale-105">
+              <Card key={index} className="bg-gray-900 border-gray-800 hover:border-coral-400 transition-all duration-300 hover:scale-105">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-3 text-coral-400">{project.title}</h3>
                   <p className="text-gray-300 mb-4 leading-relaxed">{project.description}</p>
@@ -257,7 +258,7 @@ const Index = () => {
                   <div className="mb-4">
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech, techIndex) => (
-                        <span key={techIndex} className="px-2 py-1 bg-slate-700 text-coral-400 rounded text-sm">
+                        <span key={techIndex} className="px-2 py-1 bg-gray-800 text-coral-400 rounded text-sm">
                           {tech}
                         </span>
                       ))}
@@ -273,7 +274,7 @@ const Index = () => {
       </section>
 
       {/* Experience Section */}
-      <section className="py-20 bg-slate-800">
+      <section className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Experience</h2>
@@ -281,7 +282,7 @@ const Index = () => {
           </div>
 
           <div className="max-w-3xl mx-auto">
-            <Card className="bg-slate-700 border-slate-600">
+            <Card className="bg-gray-800 border-gray-700">
               <CardContent className="p-8">
                 <div className="flex justify-between items-start mb-4">
                   <div>
@@ -317,7 +318,7 @@ const Index = () => {
               <h3 className="text-2xl font-bold mb-6 text-coral-400">Technical Skills</h3>
               <div className="grid grid-cols-2 gap-4">
                 {technicalSkills.map((skill, index) => (
-                  <div key={index} className="bg-slate-800 p-4 rounded-lg text-center hover:bg-slate-700 transition-colors">
+                  <div key={index} className="bg-gray-900 p-4 rounded-lg text-center hover:bg-gray-800 transition-colors">
                     <span className="text-gray-300">{skill}</span>
                   </div>
                 ))}
@@ -328,7 +329,7 @@ const Index = () => {
               <h3 className="text-2xl font-bold mb-6 text-coral-400">Soft Skills</h3>
               <div className="space-y-4">
                 {softSkills.map((skill, index) => (
-                  <div key={index} className="bg-slate-800 p-4 rounded-lg hover:bg-slate-700 transition-colors">
+                  <div key={index} className="bg-gray-900 p-4 rounded-lg hover:bg-gray-800 transition-colors">
                     <span className="text-gray-300">{skill}</span>
                   </div>
                 ))}
@@ -344,7 +345,7 @@ const Index = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {certifications.map((cert, index) => (
-                <Card key={index} className="bg-slate-800 border-slate-700 hover:border-coral-400 transition-all duration-300">
+                <Card key={index} className="bg-gray-900 border-gray-800 hover:border-coral-400 transition-all duration-300">
                   <CardContent className="p-6">
                     <h3 className="text-xl font-bold mb-3 text-coral-400">{cert.title}</h3>
                     <p className="text-gray-300 leading-relaxed">{cert.description}</p>
@@ -357,7 +358,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-slate-800">
+      <section id="contact" className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Contact</h2>
@@ -393,20 +394,20 @@ const Index = () => {
               </div>
             </div>
 
-            <Card className="bg-slate-700 border-slate-600">
+            <Card className="bg-gray-800 border-gray-700">
               <CardContent className="p-8">
                 <form className="space-y-6">
                   <div>
                     <label className="block text-sm font-medium mb-2">Name</label>
-                    <input type="text" className="w-full px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg focus:border-coral-400 focus:outline-none transition-colors" />
+                    <input type="text" className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:border-coral-400 focus:outline-none transition-colors" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2">Email</label>
-                    <input type="email" className="w-full px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg focus:border-coral-400 focus:outline-none transition-colors" />
+                    <input type="email" className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:border-coral-400 focus:outline-none transition-colors" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2">Message</label>
-                    <textarea rows={5} className="w-full px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg focus:border-coral-400 focus:outline-none transition-colors resize-none"></textarea>
+                    <textarea rows={5} className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:border-coral-400 focus:outline-none transition-colors resize-none"></textarea>
                   </div>
                   <Button className="w-full bg-coral-500 hover:bg-coral-600 text-white py-3 rounded-lg transition-all duration-300 hover:scale-105">
                     Send Message
@@ -419,7 +420,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 border-t border-slate-800">
+      <footer className="py-8 border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gray-400">© 2024 Supriya Ramidi. All rights reserved.</p>
         </div>
