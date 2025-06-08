@@ -66,6 +66,21 @@ const Index = () => {
     "Public Speaking", "Problem Solving", "Critical Thinking", "Team Collaboration"
   ];
 
+  const certifications = [
+    {
+      title: "LEXION 2.0 Workshop",
+      description: "Advanced Programming Workshop Certification"
+    },
+    {
+      title: "MySQL Basics by HackerRank",
+      description: "Database Management Fundamentals"
+    },
+    {
+      title: "Explore Cloud Workshop",
+      description: "Cloud Computing Technologies"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-slate-900 text-white">
       {/* Navigation */}
@@ -289,7 +304,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
+      {/* Skills Section - Now Certifications Only */}
       <section id="skills" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -318,16 +333,24 @@ const Index = () => {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
 
-              <div className="mt-8">
-                <h4 className="text-lg font-semibold mb-4">Skills & Certifications</h4>
-                <ul className="text-gray-300 space-y-2">
-                  <li>• Programming Languages: C, Java, MySQL, Python</li>
-                  <li>• Web Technologies: HTML, CSS, JavaScript</li>
-                  <li>• Software Development: Object Oriented Programming (OOP), Operating Systems, DBMS</li>
-                  <li>• Certifications: LEXION 2.0 Workshop, MySQL basics by HackerRank, Explore Cloud Workshop</li>
-                </ul>
-              </div>
+          {/* Certifications Section */}
+          <div className="mt-20">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-4">Certifications</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {certifications.map((cert, index) => (
+                <Card key={index} className="bg-slate-800 border-slate-700 hover:border-coral-400 transition-all duration-300">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-3 text-coral-400">{cert.title}</h3>
+                    <p className="text-gray-300 leading-relaxed">{cert.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </div>
