@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Menu, X, Download, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -157,7 +156,7 @@ const Index = () => {
               <div className="relative">
                 <div className="w-80 h-80 rounded-full border-4 border-coral-400 overflow-hidden">
                   <img 
-                    src="/lovable-uploads/6009685a-9edb-4c86-96a6-107d8bf8c2b9.png" 
+                    src="/lovable-uploads/54482c4a-33f3-431e-9c59-5841fb28706e.png" 
                     alt="Supriya Ramidi" 
                     className="w-full h-full object-cover"
                   />
