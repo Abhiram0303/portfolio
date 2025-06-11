@@ -15,20 +15,20 @@ const Index = () => {
 
   const projects = [
     {
-      title: "Blockchain Fault Transaction Detection",
-      description: "Machine Learning prototype combining Blockchain and Supervised Machine Learning using Logistic Regression and Random Forest algorithms",
-      tech: ["Machine Learning", "Blockchain", "Logistic Regression", "Random Forest"],
-      period: "01/2024 - 02/2024"
+      title: "Deep Learning for NICU",
+      description: "Python-based application to monitor and detect neonatal conditions using advanced machine learning algorithms",
+      tech: ["Python", "Deep Learning", "Machine Learning"],
+      period: "07/2023 - 04/2024"
     },
     {
-      title: "Smart Attendance System Using Face Recognition",
-      description: "Project to automate attendance tracking and enhance class efficiency using LBPH algorithm with effective face recognition",
-      tech: ["Face Recognition", "LBPH Algorithm", "Python"],
+      title: "Face Unlock System for Vehicles",
+      description: "Facial recognition-based vehicle access system using Python for secure and convenient vehicle unlocking",
+      tech: ["Python", "Face Recognition", "Computer Vision"],
       period: "11/2022 - 02/2023"
     },
     {
-      title: "Mobile Applications Development",
-      description: "Multiple Android applications including Currency Converter, Dice Roller, Music Player, Video Player using Android Studio",
+      title: "Android Mobile Applications",
+      description: "Developed multiple Android applications including Dice Roller, Currency Converter, Simple Calculator, and Quiz App using Android Studio and Java",
       tech: ["Java", "Android Studio", "Mobile Development"],
       period: "01/2023 - 04/2023"
     }
@@ -36,62 +36,55 @@ const Index = () => {
 
   const education = [
     {
-      degree: "Bachelor Of Technology (Computer Science)",
+      degree: "Bachelor Of Technology (Computer Science & IT)",
       institution: "MLR Institute of Technology",
-      period: "04/2020 - 06/2024",
-      score: "CGPA: 7.63",
+      period: "2020 - 2024",
+      score: "CGPA: 7.69",
       field: "Computer Science & Information Technology",
       location: "Hyderabad, Telangana"
     },
     {
       degree: "Intermediate",
-      institution: "Narayana Junior College",
-      period: "06/2018 - 05/2020",
-      score: "Percentage: 91%",
+      institution: "Sri Chaitanya Junior College",
+      period: "2018 - 2020",
+      score: "Percentage: 94.7%",
       field: "MPC",
       location: "Hyderabad, Telangana"
     },
     {
       degree: "Secondary Education",
-      institution: "Anjali High School",
-      period: "06/2006 - 05/2018",
-      score: "CGPA: 8.5",
+      institution: "India Mission Secondary School",
+      period: "2006 - 2018",
+      score: "CGPA: 9.7",
       field: "",
-      location: "Suryapet, Telangana"
+      location: "Hyderabad, Telangana"
     }
   ];
 
   const technicalSkills = [
-    "Java", "SQL", "Excel", "Python", "Machine Learning"
+    "Java", "Python", "C", "MySQL", "HTML", "CSS", "JavaScript"
+  ];
+
+  const concepts = [
+    "Object-Oriented Programming", "Operating Systems", "Database Management Systems"
   ];
 
   const softSkills = [
-    "Problem Solving", "Public Speaking", "Critical Thinking", "Team Collaboration"
+    "Public Speaking", "Problem Solving", "Critical Thinking"
   ];
 
   const certifications = [
     {
-      title: "Java Certificate From SRIT",
-      description: "Advanced Java Programming Certification"
+      title: "LEXION 2.0 Workshop",
+      description: "Advanced workshop on emerging technologies and development practices"
     },
     {
-      title: "Scratch Programming Language",
-      description: "Visual Programming Fundamentals"
-    }
-  ];
-
-  const keyAchievements = [
-    {
-      title: "Blockchain Fault Transaction Detection",
-      description: "Successfully developed a Machine Learning prototype combining Blockchain and Supervised Machine Learning techniques."
+      title: "MySQL Basics by HackerRank",
+      description: "Database fundamentals and query optimization techniques"
     },
     {
-      title: "Smart Attendance System",
-      description: "Created a Smart Attendance System that eliminates proxy attendance and saves class time."
-    },
-    {
-      title: "Mobile Applications Development",
-      description: "Developed multiple Android applications, enhancing mobile tool usability."
+      title: "Explore Cloud Workshop",
+      description: "Cloud computing fundamentals and practical applications"
     }
   ];
 
@@ -101,7 +94,7 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="text-xl font-bold text-coral-400">ABHIRAM.</div>
+            <div className="text-xl font-bold text-coral-400">SUPRIYA.</div>
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
@@ -145,14 +138,14 @@ const Index = () => {
             <div className="text-center lg:text-left">
               <p className="text-coral-400 text-lg mb-4">Hello, I'm</p>
               <h1 className="text-5xl lg:text-7xl font-bold mb-6">
-                Thirupathi
+                Supriya
                 <br />
-                <span className="text-coral-400">Abhiram</span>
+                <span className="text-coral-400">Ramidi</span>
               </h1>
-              <p className="text-xl text-gray-400 mb-2">Aspiring Developer</p>
+              <p className="text-xl text-gray-400 mb-2">Aspiring Java Developer & Tech Enthusiast</p>
               <p className="text-lg text-gray-500 mb-8">Computer Science Graduate | Based in Hyderabad</p>
               <p className="text-base text-gray-400 mb-8">
-                A passionate Computer Science graduate with hands-on experience in Java development, machine learning, and blockchain technologies. Always excited to work with teams to create wonderful solutions.
+                Passionate about solving problems and building meaningful tech solutions. I'm driven by the desire to continuously grow, contribute meaningfully to an organization, and explore innovative solutions through coding.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -160,15 +153,15 @@ const Index = () => {
                   onClick={() => scrollToSection('projects')}
                   className="bg-coral-500 hover:bg-coral-600 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105"
                 >
-                  Let's Talk
+                  View My Work
                 </Button>
                 <Button 
                   variant="outline"
                   className="border-coral-400 text-coral-400 hover:bg-coral-400 hover:text-white px-8 py-3 rounded-lg transition-all duration-300"
                   onClick={() => {
                     const link = document.createElement('a');
-                    link.href = '/lovable-uploads/74283de2-6cdd-4cd4-87d9-7d9420c8355d.png';
-                    link.download = 'Abhiram_Thirupathi_Resume.png';
+                    link.href = '/lovable-uploads/216cff74-3af4-407d-95e4-7ba5420d3fff.png';
+                    link.download = 'Supriya_Ramidi_Resume.png';
                     link.click();
                   }}
                 >
@@ -178,10 +171,10 @@ const Index = () => {
               </div>
 
               <div className="flex gap-4 mt-8 justify-center lg:justify-start">
-                <a href="https://www.linkedin.com/in/abhiram-thirupathi-631054369/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-coral-400 transition-colors">
+                <a href="https://linkedin.com/in/supriya-ramidi-2610a821a" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-coral-400 transition-colors">
                   <Linkedin size={24} />
                 </a>
-                <a href="https://github.com/Abhiram0303" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-coral-400 transition-colors">
+                <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-coral-400 transition-colors">
                   <Github size={24} />
                 </a>
               </div>
@@ -191,8 +184,8 @@ const Index = () => {
               <div className="relative">
                 <div className="w-80 h-80 rounded-full border-4 border-coral-400 overflow-hidden">
                   <img 
-                    src="/lovable-uploads/4c9d4608-5b52-41b1-a405-0f739d843baa.png" 
-                    alt="Thirupathi Abhiram" 
+                    src="/lovable-uploads/a6468d5f-9197-4d9d-99d4-2109e50e321d.png" 
+                    alt="Supriya Ramidi" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -214,17 +207,14 @@ const Index = () => {
 
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-coral-400">I'm Abhiram, A Computer Science Graduate</h3>
+              <h3 className="text-2xl font-bold mb-6 text-coral-400">I'm Supriya, A Computer Science Graduate</h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                I've always been fascinated by the intersection of technology and innovation. My 
-                career has been dedicated to finding the perfect balance between technical 
-                problem-solving and collaborative development.
+                I'm Supriya Ramidi, a Computer Science & Information Technology graduate from MLR Institute of Technology, Hyderabad. 
+                I'm driven by the desire to continuously grow, contribute meaningfully to an organization, and explore innovative solutions through coding.
               </p>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                As a dedicated Computer Science graduate with hands-on experience in Java 
-                development and machine learning, I have successfully completed projects that 
-                integrate advanced technologies, including blockchain and Supervised Machine 
-                Learning techniques.
+                With strong foundations in Java, Python, and full-stack development, I'm passionate about solving problems and building meaningful tech solutions. 
+                My goal is to achieve great heights of professional satisfaction while contributing to organizational success.
               </p>
               
               <div className="mb-6">
@@ -233,18 +223,6 @@ const Index = () => {
                   <span className="px-3 py-1 bg-coral-500 text-white rounded-full text-sm">English</span>
                   <span className="px-3 py-1 bg-coral-500 text-white rounded-full text-sm">Telugu</span>
                   <span className="px-3 py-1 bg-coral-500 text-white rounded-full text-sm">Hindi</span>
-                </div>
-              </div>
-
-              <div className="mb-6">
-                <h4 className="text-lg font-semibold mb-3">Key Achievements</h4>
-                <div className="space-y-4">
-                  {keyAchievements.map((achievement, index) => (
-                    <div key={index} className="border-l-2 border-coral-400 pl-4">
-                      <h5 className="font-medium text-coral-400">{achievement.title}</h5>
-                      <p className="text-gray-300 text-sm">{achievement.description}</p>
-                    </div>
-                  ))}
                 </div>
               </div>
             </div>
@@ -324,13 +302,13 @@ const Index = () => {
                   <span className="text-gray-400">07/2023 - 09/2023</span>
                 </div>
                 <p className="text-gray-300 mb-4">
-                  Virtual internship focusing on Java Development with practical assignments and real-world project implementation.
+                  Developed interactive Java-based applications and gained practical coding experience in real-world scenarios. 
+                  Got an opportunity to develop interactive code based on given tasks with focus on Java Development.
                 </p>
                 <ul className="text-gray-300 space-y-2">
-                  <li>• Developed interactive code based on assigned tasks</li>
-                  <li>• Gained practical experience in Java Development by completing the task</li>
-                  <li>• Built projects including ATM Machine simulation and Number Guessing Game</li>
-                  <li>• Resolved attendance mark issues and reduced proxy attendance</li>
+                  <li>• Gained practical experience in the field of Java Development by completing assigned tasks</li>
+                  <li>• Developed interactive applications and enhanced problem-solving skills</li>
+                  <li>• Worked on real-world coding scenarios and project implementations</li>
                 </ul>
               </CardContent>
             </Card>
@@ -342,17 +320,28 @@ const Index = () => {
       <section id="skills" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Skills</h2>
-            <p className="text-gray-400">Technologies I work with</p>
+            <h2 className="text-4xl font-bold mb-4">Skills & Certifications</h2>
+            <p className="text-gray-400">Technologies I work with and my achievements</p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-3 gap-12 mb-20">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-coral-400">Technical Skills</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <h3 className="text-2xl font-bold mb-6 text-coral-400">Programming Languages</h3>
+              <div className="space-y-4">
                 {technicalSkills.map((skill, index) => (
-                  <div key={index} className="bg-gray-900 p-4 rounded-lg text-center hover:bg-gray-800 transition-colors border border-gray-800">
+                  <div key={index} className="bg-gray-900 p-4 rounded-lg hover:bg-gray-800 transition-colors border border-gray-800">
                     <span className="text-gray-300">{skill}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-coral-400">Core Concepts</h3>
+              <div className="space-y-4">
+                {concepts.map((concept, index) => (
+                  <div key={index} className="bg-gray-900 p-4 rounded-lg hover:bg-gray-800 transition-colors border border-gray-800">
+                    <span className="text-gray-300">{concept}</span>
                   </div>
                 ))}
               </div>
@@ -371,12 +360,12 @@ const Index = () => {
           </div>
 
           {/* Certifications Section */}
-          <div className="mt-20">
+          <div>
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-4">Certifications</h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {certifications.map((cert, index) => (
                 <Card key={index} className="bg-gray-900 border-gray-800 hover:border-coral-400 transition-all duration-300">
                   <CardContent className="p-6">
@@ -405,7 +394,7 @@ const Index = () => {
                   <span className="text-white text-2xl">📧</span>
                 </div>
                 <h3 className="font-semibold mb-2">Email</h3>
-                <p className="text-gray-400">abhiramthirupathi79@gmail.com</p>
+                <p className="text-gray-400">supriyasudhakar01@gmail.com</p>
               </div>
               
               <div className="text-center">
@@ -413,7 +402,7 @@ const Index = () => {
                   <span className="text-white text-2xl">📞</span>
                 </div>
                 <h3 className="font-semibold mb-2">Phone</h3>
-                <p className="text-gray-400">7287030316</p>
+                <p className="text-gray-400">+91 9963992761</p>
               </div>
               
               <div className="text-center">
@@ -421,7 +410,7 @@ const Index = () => {
                   <span className="text-white text-2xl">🔗</span>
                 </div>
                 <h3 className="font-semibold mb-2">LinkedIn</h3>
-                <a href="https://www.linkedin.com/in/abhiram-thirupathi-631054369/" target="_blank" rel="noopener noreferrer" className="text-coral-400 hover:text-coral-300">
+                <a href="https://linkedin.com/in/supriya-ramidi-2610a821a" target="_blank" rel="noopener noreferrer" className="text-coral-400 hover:text-coral-300">
                   Connect with me
                 </a>
               </div>
@@ -455,7 +444,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gray-400">© 2024 Thirupathi Abhiram. All rights reserved.</p>
+          <p className="text-gray-400">© 2024 Supriya Ramidi. All rights reserved.</p>
         </div>
       </footer>
     </div>
